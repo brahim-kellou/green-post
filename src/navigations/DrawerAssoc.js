@@ -1,2 +1,11 @@
 import React from 'react';
-import { createDrawerNavigation } from 'react-navigation';
+import { createDrawerNavigator } from 'react-navigation';
+import HomeAssocScreen from '../screens/HomeAssocScreen';
+
+const DrawerAssoc = createDrawerNavigator({
+    Home: {
+        screen: HomeAssocScreen,
+    }
+})
+
+export default DrawerAssoc;
