@@ -1,19 +1,18 @@
 {
   "expo": {
-    "name": "Dimel",
-    "description": "Dimensionnement solaire",
-    "slug": "my-app",
+    "name": "GreenPost",
+    "description": "Protect the environment",
+    "slug": "green-post",
     "privacy": "public",
     "sdkVersion": "31.0.0",
     "platforms": ["ios", "android"],
     "version": "3.0",
     "orientation": "portrait",
-    "icon": "./src/assets/img/icon.png",
     "ios": {
       "supportsTablet": true
     },
     "android": {
-      "package": "com.dimel.myapp",
+      "package": "com.greenpost.myapp",
       "permissions": [],
       "versionCode": 3
     }
