@@ -42,7 +42,33 @@ export default class HomeAssocScreen extends React.Component {
             </View>
           </View>
           <View style={styles.tabNavigationContainer}>
-
+            <TouchableOpacity style={styles.tabItemContainer}>
+              <Icon
+                name='plus'
+                type='feather'
+                color={colors.primaryColor}
+                size={22}
+              />
+              <Text style={[styles.titleTabItem, {color: '#07c267'}]}>Upcoming</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.tabItemContainer}>
+              <Icon
+                name='bookmark'
+                type='feather'
+                color={colors.greyColor}
+                size={22}
+              />
+              <Text style={styles.titleTabItem}>All Events</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.tabItemContainer}>
+              <Icon
+                name='calendar'
+                type='feather'
+                color={colors.greyColor}
+                size={22}
+              />
+              <Text style={styles.titleTabItem}>Calendar</Text>
+            </TouchableOpacity>
           </View>
           <NavBottom/>
       </View>
@@ -88,8 +114,18 @@ const styles = StyleSheet.create({
     borderColor: 'white'
   },
   tabNavigationContainer: {
+    marginTop: 20,
     height: 72,
     width: '80%',
-    backgroundColor: '#fff'
-  }
+    backgroundColor: '#fff',
+    borderRadius: 25,
+    elevation: 4,
+    flexDirection: 'row',
+  },
+  tabItemContainer: {
+    flexDirection: 'column',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 })
