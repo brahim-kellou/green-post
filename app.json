@@ -6,7 +6,7 @@
     "privacy": "public",
     "sdkVersion": "31.0.0",
     "platforms": ["ios", "android"],
-    "version": "3.0",
+    "version": "1.0",
     "orientation": "portrait",
     "ios": {
       "supportsTablet": true
@@ -14,7 +14,7 @@
     "android": {
       "package": "com.greenpost.myapp",
       "permissions": [],
-      "versionCode": 3
+      "versionCode": 1
     }
     
   }
