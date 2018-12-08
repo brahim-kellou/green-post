@@ -9,7 +9,7 @@ class FicheEvent extends React.Component {
             >
                     <Image
                         style={styles.imageBackground}
-                        source={require('../assets/img/1.png')}
+                        source={require('../assets/img/5.png')}
                     />
                 <View style={styles.timeInfosContainer}>
                     <View style={[styles.center, {flex: 1}]}><Text style={styles.month}>Dec</Text></View>

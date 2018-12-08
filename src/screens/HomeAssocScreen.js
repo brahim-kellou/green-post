@@ -3,7 +3,7 @@ import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 import { Icon } from 'react-native-elements';
 import { colors } from '../styles/Colors';
 import NavBottom from '../components/NavBottom';
-import FicheEvent from '../components/FicheEvent';
+import ListeEvents from '../components/ListeEvents';
 
 
 export default class HomeAssocScreen extends React.Component {
@@ -70,8 +70,7 @@ export default class HomeAssocScreen extends React.Component {
               <Text style={styles.titleTabItem}>Calendar</Text>
             </TouchableOpacity>
           </View>
-
-          <FicheEvent/>
+          <ListeEvents/>
           <NavBottom/>
       </View>
     )
