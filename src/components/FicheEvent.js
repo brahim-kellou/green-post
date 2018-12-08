@@ -2,27 +2,31 @@ import React from 'react'
 import { StyleSheet, View, TextInput, Button, Text, Image, ImageBackground  } from 'react-native'
 
 class FicheEvent extends React.Component {
+    constructor(props){
+        super(props);
+    }
     render(){
+        const { ImageURL , Date , NameEvent , NameAss } = this.props ; 
         return (
             <ImageBackground 
                 style={styles.imageContainer}
             >
                     <Image
                         style={styles.imageBackground}
-                        source={require('../assets/img/5.png')}
+                        source={ImageURL}
                     />
                 <View style={styles.timeInfosContainer}>
                     <View style={[styles.center, {flex: 1}]}><Text style={styles.month}>Dec</Text></View>
-                    <View style={[styles.center, {flex: 3}]}><Text style={styles.day}>19</Text></View>
+                    <View style={[styles.center, {flex: 3}]}><Text style={styles.day}>{Date}</Text></View>
                     <View style={[styles.center, {flex: 1}]}><Text style={styles.place}>Sablettes, Alger</Text></View>
                     
                 </View>
                  <View style={styles.eventInfosContainer}>
                     <View style={[styles.center, {flex: 1}]}>
-                        <Text style={styles.eventName}>Nom de l'événement</Text>
+                        <Text style={styles.eventName}>{NameEvent}</Text>
                     </View>
                     <View style={[styles.center, {flex: 3, justifyContent: 'flex-start'}]}>
-                        <Text style={styles.nomAsso_container}>Nom de l'association</Text>
+                        <Text style={styles.nomAsso_container}>{NameAss}</Text>
                     </View>
                     <View style={[styles.center, {flex: 1}]}>
                         <Text style={styles.benevole_container}>Bénévoles 5/15</Text>
