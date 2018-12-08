@@ -12,7 +12,7 @@ class NavBottom extends Component {
   render() {
     return (
       <ImageBackground
-        source={require('../assets/img/bottom-bar.png')}
+        source={require('../assets/img/bottom-bar-white.png')}
         style={styles.container}>
         <FAB/>
       </ImageBackground>

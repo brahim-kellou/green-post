@@ -3,6 +3,7 @@ import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 import { Icon } from 'react-native-elements';
 import { colors } from '../styles/Colors';
 import NavBottom from '../components/NavBottom';
+import FicheEvent from '../components/FicheEvent';
 
 
 export default class HomeAssocScreen extends React.Component {
@@ -27,7 +28,6 @@ export default class HomeAssocScreen extends React.Component {
             </View>
             <View style={styles.notificationIcon}>
               <TouchableOpacity style={{padding: 3}}
-                
               >
                 <Icon 
                   type='feather'
@@ -44,7 +44,7 @@ export default class HomeAssocScreen extends React.Component {
           <View style={styles.tabNavigationContainer}>
             <TouchableOpacity style={styles.tabItemContainer}>
               <Icon
-                name='plus'
+                name='bookmark'
                 type='feather'
                 color={colors.primaryColor}
                 size={22}
@@ -53,7 +53,7 @@ export default class HomeAssocScreen extends React.Component {
             </TouchableOpacity>
             <TouchableOpacity style={styles.tabItemContainer}>
               <Icon
-                name='bookmark'
+                name='clipboard'
                 type='feather'
                 color={colors.greyColor}
                 size={22}
@@ -70,6 +70,8 @@ export default class HomeAssocScreen extends React.Component {
               <Text style={styles.titleTabItem}>Calendar</Text>
             </TouchableOpacity>
           </View>
+
+          <FicheEvent/>
           <NavBottom/>
       </View>
     )
@@ -80,6 +82,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
+    backgroundColor: '#eee'
   },
   headerBG: {
     position: 'absolute',
@@ -115,7 +118,8 @@ const styles = StyleSheet.create({
   },
   tabNavigationContainer: {
     marginTop: 20,
-    height: 72,
+    marginBottom: 10,
+    height: 56,
     width: '80%',
     backgroundColor: '#fff',
     borderRadius: 25,
